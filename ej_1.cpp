@@ -2,12 +2,16 @@
 using namespace std;
 
 main(){
-    int n;
+    int horas, valor_horas, sueldo;
 
-    cout << "Ingrese un numero: ";
-    cin >>n;
+    cout << "Ingrese las horas trabajadas: ";
+    cin >> horas;
+    cout << "Ingrese el valor por hora: ";
+    cin >> valor_horas;
 
-    cout << "Su numero es: " << n << endl;
+    sueldo=horas*valor_horas;
+
+    cout << "su sueldo es de: " << sueldo << endl;
 
     return 0;
 }
