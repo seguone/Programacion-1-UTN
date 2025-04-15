@@ -2,18 +2,16 @@
 using namespace std;
 
 main(){
-    int num1, num2;
+    int num;
 
     cout << "Ingrese un numero: ";
-    cin >> num1;
-    cout << "Ingrese otro numero: ";
-    cin >> num2;
+    cin >> num;
 
-    if(num1%num2==0){
-       cout << "el primer numero es multiplo del segundo";
+    if(num%2==0){
+       cout << "ES PAR";
     }
     else{
-        cout << "NO ES MULTIPLO";
+        cout << "NO ES PAR";
     }
 
     return 0;
