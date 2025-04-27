@@ -2,35 +2,32 @@
 using namespace std;
 
 main(){
-    int num, primerImpar,segundoImpar;
-    bool impar=false;
-    bool segImpar=false;
-    int anteultimoImpar, ultimoImpar;
+    int num, numAnt;
+    bool desordenado=false;
+    bool ant=false;
 
     for (int i=1; i<=7; i++){
         cout << "Ingrese un numero: ";
         cin >> num;
-        if(num%2!=0){
-            if(impar==false){
-                primerImpar=num;
-                impar=true;
-            }
-            else if(segImpar==false){
-                segundoImpar = num;
-                segImpar=true;
-            }
-            else{
-                anteultimoImpar = ultimoImpar;
-                ultimoImpar = num;
-            }
+
+        if(ant==false){
+            numAnt=num;
+            ant=true;
+        }
+        else if(num>=numAnt){
+            numAnt=num;
+        }
+        else{
+            desordenado=true;
         }
     }
 
-    cout << "PRIMER IMPAR: " << primerImpar << endl;
-    cout << "SEGUNDO IMPAR: " << segundoImpar << endl;
-    cout << "____________________________________" << endl;
-    cout << "ANTEULTIMO IMPAR: " << anteultimoImpar << endl;
-    cout << "ULTIMO IMPAR: " << ultimoImpar << endl;
+    if(desordenado== true){
+    cout << "DESORDENADO" << endl;
+    }
+    else{
+        cout << "ORDENADO" << endl;
+    }
 
     return 0;
 }
