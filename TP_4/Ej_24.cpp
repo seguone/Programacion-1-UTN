@@ -58,7 +58,7 @@ int main() {
     porDesa=desa*100/cont;
 
     cout << "PROMEDIO DE LAS NOTAS: " << pro << endl;
-    cout << "LEGAJO DEL ESTUDIANTE CON MENOR NOTA: " << menorLegajo << " NOTA: " << menorNota << endl;
+    cout << "LEGAJO DEL ESTUDIANTE CON MENOR NOTA: " << menorLegajo << " y la NOTA: " << menorNota << endl;
     cout << "CANTIDAD DE EXAMENES RENDIDOS PARA LA MATERIA 10: " << cont10 << endl;
     cout << "PORCENTAJE DE APROBADOS: " << porApro << endl;
     cout << "PORCENTAJE DE DESAPROBADOS: " << porDesa << endl;
